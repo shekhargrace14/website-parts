@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+}
+
+.master{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tab-container{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.control{
+    width: 100%;
+    display: flex;
+}
+button{
+    width: 100%;
+    height: 40px;
+    border: 0;
+    padding: 10px;
+}
+
+.content{
+    width: 100%;
+    border-top: 0;
+    background-color: #142f43;
+}
+
+.box1, .box2, .box3{
+    width: 100%;
+    padding: 30px;
+    display: none;
+}
+p{
+    width: 100%;
+    color: #fff;
+}
+
+.active{
+    display: block;
+}
+.active-button{
+    background-color: #142f43;
+    color: #fff;
+}
