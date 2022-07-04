@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #first
+        {
+            padding: 5% ;
+            border: 1px solid black;
+            background-color: rgb(244, 223, 244);
+        }
+        #second{
+            padding: 5% ;
+            border: 1px solid black;
+            background-color: orange;
+        }        
+
+    </style>
+</head>
+<body>
+    <h1>Chander Shekhar: </h1>
+
+    <div id="first">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus et quibusdam expedita ea molestiae labore?</p>
+        <p>Lorem ipsum dolor sit amet. </p>
+    </div>
+    <ul>
+        <li>Oranges</li>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Grapes</li>
+    </ul>
+
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('li').each(function(){
+                // console.log($(this).text());
+                $(this).text("hello");
+            })
+        })
+
+    </script>
+    <!-- has() -->
+    <!-- is() -->
+
+</body>
+</html>  
