@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            width: 70%;
+            height: 200px;
+            padding: 10px;
+            border: 1px solid #000;
+            overflow: auto;
+            background: pink;
+        }
+    </style>
+</head>
+<body>
+    <h1>Chander Shekhar: jquery Keyboard Events</h1>
+    <div id="box">
+        <h2>Test Box</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi consequatur unde tempora numquam quibusdam! Ea. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus exercitationem non autem neque blanditiis veniam ducimus temporibus dicta minima iusto. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius consequatur repellat, ipsum quia vel suscipit. Est, fugit veritatis! Perspiciatis deserunt nobis mollitia facere, obcaecati reprehenderit voluptatibus sequi sed, nemo, aliquid maxime sapiente harum quibusdam accusamus hic sit labore reiciendis ipsa quae? Consequuntur sapiente laboriosam qui omnis reprehenderit quam aliquam eius deleniti ab accusamus natus, quo quis praesentium laborum cumque, corrupti tenetur illo quas laudantium dignissimos harum. Repudiandae ipsa illo, reiciendis tempora dolorum at doloribus eaque assumenda corrupti cum nam asperiores natus quis quas cumque harum quisquam voluptatum mollitia officiis odio atque magni rem optio! Fugiat suscipit laborum rerum quam architecto.</p>
+    </div>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia provident doloribus dignissimos quisquam qui rem tempore nisi ducimus ipsa. Deleniti eius minima harum provident perferendis. Ipsam ex mollitia eius illo nesciunt atque magni quod architecto exercitationem sit ducimus in aut quis praesentium ullam, natus perferendis ipsum dignissimos. Praesentium, eaque velit?</p>
+    
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                console.log("You are scrolling");
+            })
+            $('#box').scroll(function(){
+                console.log("You are scrolling");
+            })
+            $(window).resize(function(){
+                console.log("You are resizing");
+            })
+        })
+
+    </script>
+    <!-- load() Removed in version 3.0-->
+    <!-- unload() Removed in version 3.0-->
+    <!-- resize() -->
+    <!-- scroll() -->
+</body>
+</html>

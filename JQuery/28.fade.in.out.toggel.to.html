@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            width: 300px;
+            height: 200px;
+            border: 1px solid black;
+            background-color: lightgreen;
+        }
+   
+    </style>
+</head>
+<body style="width: 1000px;">
+    <h1>Chander Shekhar: </h1>
+    <div id="box" class="test">
+        <h2 >Test Box</h2>
+        <p class="test">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+    </div>
+    <button id="fadeInBtn">fadeInBtn</button>
+    <button id="fadeOutBtn">fadeOutBtn</button>
+    <button id="fadeToggleBtn">FadeToggleBtn</button>
+    <button id="fadeToBtn">FadeToBtn</button>
+
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $('#fadeInBtn').click(function(){
+            $("#box p").fadeIn(1000, function(){
+                console.log("Now it is Shown")
+            });
+        })
+        $('#fadeOutBtn').click(function(){
+            $("#box p").fadeOut("fast", function(){
+                console.log("Now it is hidden")
+            });
+        })
+        $('#fadeToggleBtn').click(function(){
+            $("#box p").fadeToggle("slow");
+        })
+        $('#fadeToBtn').click(function(){
+            $("#box p").fadeTo(2000,0.5,function(){
+                console.log("Now it is hidden")
+            });
+        })
+    }) 
+
+
+    </script>
+    
+    <!-- fadeIn() -->
+    <!-- fadeOut() It puts display none to the div-->
+    <!-- fadeToggle() -->
+
+    <!-- fadeTO() -->
+    <!-- $(selector).fadeTo(speed,opacity,callback); -->
+
+</body>
+</html> 

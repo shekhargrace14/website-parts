@@ -1,0 +1,64 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            #box{
+                background-color: pink;
+                padding: 10px;
+                border: 1px solid #000;
+            }
+            .red{
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Chander Shekhar: jquery Keyboard Events</h1>
+        <div id="box" class="test">
+            <h2>Test Box</h2>
+            <p>Lorem ipsum <span> dolor sit amet </span> consectetur, adipisicing elit. Commodi consequatur unde tempora numquam quibusdam! Ea.</p>
+        </div>
+        <br>
+        <button id="clickbutton">Set Value</button>
+
+
+        <h1>Form Events</h1>
+        <form action="" id="sform">
+            <label for="">Name</label>
+            <input type="name" name="" id="sname">
+
+            <label for="">Class</label>
+            <input type="email" name="" id="sclass">
+
+            <br><br>
+            <input type="submit">
+        </form>
+        
+
+
+        <script src="jquery-3.6.0.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#clickbutton').click(function(){
+                    $('#box h2').text("Hello Shekhar");
+                    $('#box p').html("Hello <b> Shekhar</b>");
+                    $('#box h2').attr("class","red  ");
+                    $('#sname').val("yahoo Baba");
+                    $('#sclass').val("Software Engineer");
+
+
+                })
+
+            });
+        </script>
+        <!-- set method means to add values in html dom -->
+        <!-- text() -->
+        <!-- html() -->
+        <!-- attr() -->
+        <!-- val() -->
+    </body>
+    </html>

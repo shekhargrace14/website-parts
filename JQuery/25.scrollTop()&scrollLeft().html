@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            width: 230px;
+            height: 80px;
+            background: lightgreen;
+            border: 1px solid black;
+            position: fixed;
+            left: 20px;
+            bottom: 30px;
+        }
+   
+    </style>
+</head>
+<body style="width: 1000px;">
+    <h1>Chander Shekhar: </h1>
+        <h2>Test Box</h2>
+        <button id="scrolltopBtn">ScrollTop</button>
+        <button id="scrollleftBtn">ScrollLeft</button>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum laudantium, velit veritatis qui consequuntur alias? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit odit eveniet accusamus exercitationem laborum quae libero labore! Suscipit vel nobis neque voluptate ipsam necessitatibus reiciendis beatae fugit, labore saepe nulla ipsa deserunt eius quod sit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae tempore earum similique ex sunt eius, nemo, explicabo ad minima reiciendis nam quam blanditiis dignissimos quod possimus laborum adipisci et deserunt repudiandae? Maxime, adipisci ipsum iusto laboriosam libero tenetur cumque sint facere repellat molestias, debitis, asperiores mollitia ab aspernatur officiis atque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum porro, libero architecto rem sunt vero autem sint tempore sequi veritatis voluptate vitae ad esse rerum harum repellat. Architecto nisi, ducimus alias dignissimos, doloremque numquam quo a voluptatum, dolores perspiciatis eaque? Dignissimos mollitia voluptates repellendus quia earum? Ullam quaerat dolore enim sit nisi sunt, delectus eligendi iste pariatur a ex voluptate perferendis velit nihil distinctio aspernatur accusamus repellat temporibus quia laboriosam placeat consectetur voluptas odio. Provident aliquid odit voluptate odio placeat? Numquam nulla ducimus corrupti commodi doloribus praesentium, rem, similique debitis omnis accusamus iste inventore voluptas unde dolor facilis architecto at, laborum ipsum culpa vitae veniam neque illo? Enim hic voluptate eos cum fugit? Iusto, quas officia dignissimos excepturi cupiditate perferendis illum quam sit ipsam, earum odio sint sed reprehenderit. Eum id placeat alias quia earum, voluptatibus ex vero autem minus animi commodi nobis accusamus facilis tempora qui. Illum qui dignissimos doloribus aspernatur, tempora perferendis maiores laborum nihil incidunt dicta unde excepturi asperiores ipsa tenetur veritatis, quisquam fuga recusandae dolore, magni odio. Officiis excepturi ipsam sit unde ipsum earum et repellendus, ducimus nemo ratione quas, non sed tenetur blanditiis explicabo voluptates ad recusandae, assumenda maxime quis esse at ullam! Illo, provident. Voluptatum itaque, quia quidem animi quod aperiam autem enim voluptate veritatis officiis vitae sequi vel, magni incidunt iste aliquid? Mollitia dolorum eaque voluptatum placeat consectetur officiis minima deleniti velit laudantium, illo amet aspernatur omnis perferendis quam ullam eligendi nostrum expedita necessitatibus vel cumque non odio. Corporis nostrum earum omnis laborum libero sunt magnam rem. Cumque adipisci vero, tempore laudantium modi accusantium nisi. Blanditiis id odit eveniet rerum ullam architecto recusandae, neque, laborum maiores reiciendis ipsam molestias, repudiandae temporibus possimus debitis autem esse eaque tenetur. Quaerat molestiae tenetur dolores sint neque, sit nostrum omnis id aliquid assumenda voluptatum deserunt sunt ratione esse laborum reiciendis numquam quo nulla. Fuga libero ex consequuntur. Eos sapiente tenetur magnam soluta, officiis saepe sunt. Praesentium, dicta ducimus. Labore optio laudantium nisi corporis nobis asperiores voluptatum aliquid ut laboriosam eos, atque dolorum commodi a quasi distinctio consectetur doloribus ullam adipisci iusto. Rerum dolore nemo aperiam veniam nesciunt id reiciendis temporibus harum enim earum odio facilis natus quisquam sapiente nulla molestias officiis, unde accusamus blanditiis quibusdam error commodi ipsum. Reiciendis corporis aliquid illum praesentium nisi commodi soluta molestias aliquam consectetur. Deserunt non aperiam enim quidem sequi ad esse veritatis fugit sunt, unde maxime tempora impedit alias voluptatum molestias eum a consequuntur dignissimos sed, laborum repellendus tenetur cumque? Cumque tenetur rerum necessitatibus ducimus ex quam sint repudiandae cum aliquam maxime modi molestias repellendus deleniti, facere consequuntur alias quia fugiat dicta vitae incidunt placeat delectus laboriosam autem quae? Libero ad ea veniam, saepe molestias optio qui itaque quae iste ullam laborum minus, debitis, tempore mollitia beatae veritatis. Repudiandae laboriosam impedit placeat doloremque vel veniam ratione fugiat inventore, labore animi necessitatibus voluptate. Inventore dolore, alias consequuntur aperiam perspiciatis excepturi beatae aliquam molestias quae laboriosam vero nulla aspernatur amet quaerat ullam reprehenderit fugit iusto, possimus cupiditate nostrum eos magni a voluptas. Dolore.</p>
+
+
+    <div id="box"></div>
+    
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                $('#box').html("");
+                $('#box').append("Top: " + $(window).scrollTop());
+                $('#box').append("<br>Left: " + $(window).scrollLeft());
+            });
+            $('#scrolltopBtn').click(function(){
+                $(window).scrollTop(200);
+            })
+            $('#scrollleftBtn').click(function(){
+                $(window).scrollLeft(100);
+            })
+
+        });
+    </script>
+    
+    <!-- scrollTop() -->
+    <!-- scrollLeft() -->
+
+</body>
+</html> 

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            width: 300px;
+            padding: 10px;
+            border: 1px solid #000;
+        }
+        #box2{
+            padding: 10px;
+            border: 1px solid #000;
+        }
+   
+    </style>
+</head>
+<body>
+    <h1>Chander Shekhar: jquery Keyboard Events</h1>
+    <div id="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi dignissimos placeat possimus!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi dignissimos placeat possimus!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi dignissimos placeat possimus!</p>
+    </div>
+
+    
+    <br>
+    <button id="replaceWithBtn">Replace With</button>
+    <button id="replaceAllBtn">Replace All</button>
+    
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#replaceWithBtn').click(function(){
+                $('#box p:first-child').replaceWith('<p>I Am a Victorious</p>');
+            })
+            $('#replaceAllBtn').click(function(){
+                $("<p>I Am       Victorious</p>").replaceAll('#box p');
+            })
+        })
+    </script>
+    
+    <!-- Clone() -->
+</body>
+</html> 

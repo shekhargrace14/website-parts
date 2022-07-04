@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main-outer{
+            padding: 5% ;
+            border: 1px solid black;
+            background-color: rgb(244, 223, 244);
+        }
+        #outer{
+            padding: 5% ;
+            border: 1px solid black;
+            background-color: orange;
+        }        
+        #inner{
+            padding: 5% ;
+            height: 15rem;
+            border: 1px solid black;
+            background-color: pink;
+        }
+        #inner div{
+            padding: 5% ;
+            width: 10%;
+            margin: 0 2%;
+            border: 1px solid black;
+            background-color: aqua;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Chander Shekhar: </h1>
+    <div id="main-outer">
+        <h2>Main outer</h2>
+        <div id="outer" style="position: relative;">
+            <h2>Outer</h2>
+            <div id="inner">
+                <h2 id="child-head">inner</h2>
+                <div>A</div>
+                <div>B</div>
+                <div id="child-C">C</div>
+                <div>D</div>
+            </div>
+        </div>
+    </div>
+    <button id="animate">animate</button>
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // $("#child-C").parent().css('background','red')
+            // $("#inner").parent().css('background','red')
+            // $("#child-C").parents().css('background','red')
+            // $("#child-C").parents('#main-outer').css('background','red')
+            // $("#child-C").parentsUntil('#main-outer').css('background','red')
+            // $("#child-C").offsetParent('#main-outer').css('background','red')
+            $("#child-C").closest('div').css('background','red')
+        })
+
+    </script>
+    <!-- Methors of jquery  -->
+    <!-- 1. Ancestors Methods 
+        A. we cant traget the parent or grand-parent or great-grand-parent in css
+        B. so jQuery has Ancestors method to do that.  
+        Types of ancestor method
+        1. parent()
+        2. parents()
+        3. parentsUntil()
+        4. closest()
+        5. offsetParents() targets only parents which has postion property.
+    -->
+    <!-- 2. Descendants Methods -->
+    <!-- 3. Sibling Methods  -->
+    <!-- 4. Filtering Methods -->
+
+
+</body>
+</html>  

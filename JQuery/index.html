@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="test1">
+        Lorem ipsum dolor sit amet.
+    </div>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // console.log("hello");
+            var a = $('#test1').html();
+            console.log(a);
+        })
+    </script>
+
+<!-- 
+$(document).ready(function(){ = when whole documnet is ready then start working
+    
+(document)= Selector = to traget Dom Element
+ready() = methord() =   What Work
+
+html= methord gives you HTML
+
+-->
+<!-- <script>
+    $(document).ready(function(){
+        var a = $("#test").html();
+        console.log(a)
+    })
+</script> -->
+<!-- -------------------------------------- -->
+
+<!-- <script>
+    $(function(){   
+        
+
+    })
+</script> -->
+
+</body>
+</html>

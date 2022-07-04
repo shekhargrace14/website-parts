@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            background-color: pink;
+            padding: 10px;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <h1>Chander Shekhar: jquery Keyboard Events</h1>
+    <div id="box" class="test abc">
+        <h2>Test Box</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi consequatur unde tempora numquam quibusdam! Ea.</p>
+    </div>
+
+
+
+
+    <h1>Form Events</h1>
+    <form action="" id="sform">
+        <label for="">Name</label>
+        <input type="name" name="" id="sname">
+
+        <label for="">Class</label>
+        <input type="email" name="" id="sclass">
+
+        <label for="">Country</label>
+        <select name="" id="scountry">
+            <option value="India">India</option>
+            <option value="Pakistan">Pakistan</option>
+            <option value="Bangladesh">Bangladesh</option>
+            <option value="Nepal">Nepal</option>
+        </select>
+        <br><br>
+        <input type="submit">
+    </form>
+    <div id="test" style="border:1px solid red; margin-top:28px "></div>
+    
+
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // var a= $('#box').html();
+            // var a= $('body').html();
+            // var a= $('#box p').text();
+            // var a= $('#box p').html();
+            // var a= $('#box').attr('class');
+            // console.log(a)
+
+
+            $('#sform').submit(function(){
+                var name = $('#sname').val();
+                alert("Hello "+name)
+            });
+
+
+        });
+    </script>
+    <!-- text()  it gives only text Without tags-->
+    <!-- html() it gives tags and text together-->
+    <!-- attr() attribute-->
+    <!-- val() value of forms-->
+</body>
+</html>

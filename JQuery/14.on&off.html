@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            padding: 10px;
+            border: 1px solid #000;
+        }
+        .boxbg{
+            background-color: pink;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Chander Shekhar: jquery Keyboard Events</h1>
+    <div id="box">
+        <h2>Test Box</h2>
+        <p>Lorem ipsum <span> dolor sit amet </span> consectetur, adipisicing elit. Commodi consequatur unde tempora numquam quibusdam! Ea.</p>
+    </div>
+    <br>
+    <button>Remove Events</button>
+    
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#box').click(function(){
+                $('#box').css("background-color","red")
+            })
+
+
+            $('#box').on({
+                "click" : function(){
+                    $(this).css("background-color","red")
+                },
+                "mouseover" : function(){
+                    $(this).css("background-color","green")
+                },
+                "mouseout" : function(){
+                    $(this).css("background-color","blue")
+                },
+
+            });
+            $("button").click(function(){
+                $("#box").off("mouseover mouseout")
+            });
+
+
+        })
+    </script>
+    <!-- 
+        $('abc').on({
+            click:function(){
+
+            },
+            mouseenter:function(){
+
+            }
+        })
+     -->
+</body>
+</html> 

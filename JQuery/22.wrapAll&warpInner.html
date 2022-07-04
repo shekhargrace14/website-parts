@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            width: 500px;
+            padding: 10px;
+            border: 1px solid #000;
+        }
+        h1{
+            color: red;
+            background-color: pink;
+        }
+   
+    </style>
+</head>
+<body>
+    <!-- <h1>Chander Shekhar: jquery Keyboard Events</h1> -->
+    <div id="box">
+        <h2>Test Box</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum laudantium, velit veritatis qui consequuntur alias?</p>
+        <p>Lorem ips um dolor sit amet consectetur adipisicing elit. Illum laudantium, velit veritatis qui consequuntur alias?</p>
+    </div>
+
+    
+    <br>
+    <button id="wrapAllBtn">WrapAll</button>
+    <button id="wrapInnerBtn">WrapInner</button>
+    
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#wrapAllBtn').click(function(){
+                $('p').wrapAll('<h1></h1>');
+            });
+            $('#wrapInnerBtn').click(function(){
+                $('p').wrapInner('<i></i>');
+            });
+        })
+    </script>
+    
+    <!-- wrap() -->
+    <!-- unwrap() -->
+</body>
+</html> 
