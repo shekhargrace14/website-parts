@@ -43,8 +43,9 @@
                 <h2 id="child-head">inner</h2>
                 <div>A</div>
                 <div>B</div>
-                <div class="test">C</div>
+                <div id="child-C">C</div>
                 <div>D</div>
+                <div class="test">E</div>
             </div>
         </div>
     </div>
@@ -53,12 +54,16 @@
     <script src="jquery-3.6.0.min.js"></script>
     <script>
         $(document).ready(function(){
-            // $("#inner").children().css('background','red')
-            // $("#outer").children().css('background','red')
-            // $("#inner").children('.test').css('background','red')
-            // $("#inner").find('.test').css('background','red')
-            // $("#main-outer").find('.test').css('background','red')
+            // $("#child-C").siblings().css('background','red')
+            // $("#child-C").siblings('h2').css('background','red')
+            // $("#child-C").next().css('background','red')
+            // $("#child-C").nextAll().css('background','red')
+            // $("#child-C").nextUntil('.test').css('background','red')
+            // $("#child-C").prev().css('background','red')
+            // $("#child-C").prevAll().css('background','red')
+            $("#child-C").prevUntil().css('background','red')
 
+          
         })
 
     </script>
@@ -78,7 +83,13 @@
         2. find()
     -->
     <!-- 3. Sibling Methods  
-        
+        1. siblings()
+        2. next()
+        3. nextAll()
+        4. nextUntil()
+        5. prev()
+        6. prevAll()
+        7.prevUntil()
     -->
     <!-- 4. Filtering Methods -->
 
